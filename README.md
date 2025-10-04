@@ -1,4 +1,18 @@
-# legaltech-pset-solicitud
+# PSET - Legal Tech
+
+## Situación inicial
+
+La Municipalidad de San Borja Verde ha decidido modernizar sus procesos administrativos para reducir tiempos de espera, corrupción latente y opacidad en la gestión. Recientemente, el alcalde electo, motivado por un escándalo mediático de solicitudes perdidas y ciudadanos burlados, ha aprobado la creación de una Unidad Especial LegalTech con abogados, tecnólogos y analistas de datos.
+
+Usted (y su equipo) ha sido convocado como parte de esa unidad. Su misión: diagnosticar el proceso de atención de solicitudes administrativas de la Municipalidad (por ejemplo, peticiones ciudadanas, permisos, derechos de acceso a información). Se les ha entregado un dataset que simula los registros reales: quién hizo cada solicitud, cuándo fue recibida, su tipo, el trámite que tuvo, si fue rechazada o aprobada, plazos, tiempos internos, etc.
+
+Desde el primer día ustedes sienten el peso: la burocracia tiene rutas ocultas, múltiples rechazos inexplicables, “tiempos muertos” en los expedientes, faltas de trazabilidad y poco control interno. Se rumorea que algunos funcionarios postergaban tareas para seguir cobrando “gestión informal”.
+
+Su tarea como equipo: atravesar el historial de solicitudes, reconstruir y entender la cadena de procesos (recibir, evaluar, solicitar información adicional, resolver, notificar), detectar cuellos de botella, medir indicadores de rendimiento, descubrir posibles anomalías e ineficiencias, y proponer mejoras. 
+
+## Proceso identificado
+
+Como parte del trabajo inicial, y luego de escuchar al personal de la Municipalidad, su eequipo ha levantado el siguiente flujo:
 
 ```mermaid
 flowchart LR
@@ -15,6 +29,22 @@ flowchart LR
     classDef decision fill:#FFD700,stroke:#333,stroke-width:1px,color:#000;     %% Amarillo
     classDef tarea fill:#ADD8E6,stroke:#333,stroke-width:1px,color:#000;        %% Azul claro
 ```
+
+## Explicación de actividades del flujo
+
+1. **Recibir solicitud:** El ciudadano remite su petición mediante el canal oficial (plataforma web municipal, buzón digital o formato físico que luego se digitaliza). En esta fase se registra la solicitud con campos esenciales: nombre del solicitante, fecha de recepción, tipo de petición y asunto.
+
+2. **Evaluar solicitud:** Un funcionario revisa la solicitud recibida para verificar si cumple con los requisitos formales exigidos: datos completos, documentos adjuntos, cumplimiento de normas básicas, plazos correctos, etc.
+
+3. **Rechazar solicitud:** Si la solicitud no cumple los requisitos, se ejecuta esta tarea de rechazo formal: se determina que la petición no puede continuar por incumplimientos detectados en la etapa de evaluación.
+
+4. **Enviar un email explicando los motivos del rechazo de la solicitud:** Tras la decisión de rechazo, se genera una comunicación al solicitante (vía correo electrónico u otro medio establecido) explicando claramente los motivos por los cuales fue rechazada la solicitud, con referencias normativas o requisitos faltantes.
+
+5. **Registrar solicitud:** Si la solicitud supera la evaluación (cumple requisitos), en esta tarea se formaliza su registro en el sistema de trámites internos. Se asigna un número de expediente, responsable, fecha de inicio y estado inicial del trámite.
+
+6. **Recabar la información necesaria para atender la solicitud:** En esta etapa se solicita al interesado (o se recolectan internamente) los documentos, datos o evidencias complementarias necesarias para sustentar la solicitud. El expediente queda abierto mientras se obtenga la información.
+
+7. **Enviar un email adjuntando la información solicitada:** Una vez completada la información requerida, se genera una respuesta al ciudadano mediante correo (o el medio oficial), adjuntando la información solicitada o el resultado de la atención. Con esto, el proceso concluye para ese expediente.
 
 ## 📊 Dataset: legaltech_pset_solicitudes.xlsx
 
