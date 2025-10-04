@@ -1,0 +1,30 @@
+# Archivos de Sistema Operativo
+.DS_Store
+# Archivos temporales de Excel/Office
+~*.xls*
+~$*.xls*
+
+# Entornos Virtuales y Dependencias de Python
+# Ignorar el directorio de entornos virtuales (comúnmente 'venv' o '.venv')
+venv/
+.venv/
+# Ignorar el directorio de caché de pip
+__pycache__/
+*.pyc
+
+# Archivos de registro y bases de datos generados
+*.log
+*.sqlite
+
+# Archivos de Jupyter Notebook Checkpoints (si los usas)
+.ipynb_checkpoints
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de Datos (MUY IMPORTANTE - Lee la nota)
+# Generalmente NO se suben archivos grandes de datos a GitHub.
+# Si tu archivo legaltech_pset_solicitudes.xlsx es grande o sensible, ¡ignóralo!
+# legaltech_pset_solicitudes.xlsx
