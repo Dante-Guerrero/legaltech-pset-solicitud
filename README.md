@@ -12,7 +12,7 @@ Su tarea como equipo: atravesar el historial de solicitudes, reconstruir y enten
 
 ## Proceso identificado
 
-Como parte del trabajo inicial, y luego de escuchar al personal de la Municipalidad, su eequipo ha levantado el siguiente flujo:
+Como parte del trabajo inicial, y luego de escuchar al personal de la Municipalidad, su equipo ha levantado el siguiente flujo:
 
 ```mermaid
 flowchart LR
