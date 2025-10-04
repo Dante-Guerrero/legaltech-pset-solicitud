@@ -43,7 +43,7 @@ flowchart LR
 
 7. **Enviar un email adjuntando la información solicitada:** Una vez completada la información requerida, se genera una respuesta al ciudadano mediante correo (o el medio oficial), adjuntando la información solicitada o el resultado de la atención. Con esto, el proceso concluye para ese expediente.
 
-## 📊 Dataset: legaltech_pset_solicitudes.xlsx
+## 📊 Dataset
 
 Para facilitar el análisis de la información, se ha construido un dataset con la información de los sistemas de la Municipalidad. A continuación se describe las tablas que lo componen:
 
