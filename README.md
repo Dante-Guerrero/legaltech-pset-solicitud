@@ -2,7 +2,7 @@
 
 ## Situación inicial
 
-La Municipalidad de San Borja Verde ha decidido modernizar sus procesos administrativos para reducir tiempos de espera, corrupción latente y opacidad en la gestión. Recientemente, el alcalde electo, motivado por un escándalo mediático de solicitudes perdidas y ciudadanos burlados, ha aprobado la creación de una Unidad Especial LegalTech con abogados, tecnólogos y analistas de datos.
+La Municipalidad de Ideas Creativas ha decidido modernizar sus procesos administrativos para reducir tiempos de espera, corrupción latente y opacidad en la gestión. Recientemente, el alcalde electo, motivado por un escándalo mediático de solicitudes perdidas y ciudadanos burlados, ha aprobado la creación de una Unidad Especial LegalTech con abogados, tecnólogos y analistas de datos.
 
 Usted (y su equipo) ha sido convocado como parte de esa unidad. Su misión: diagnosticar el proceso de atención de solicitudes administrativas de la Municipalidad (por ejemplo, peticiones ciudadanas, permisos, derechos de acceso a información). Se les ha entregado un dataset que simula los registros reales: quién hizo cada solicitud, cuándo fue recibida, su tipo, el trámite que tuvo, si fue rechazada o aprobada, plazos, tiempos internos, etc.
 
@@ -29,9 +29,6 @@ flowchart LR
     classDef decision fill:#FFD700,stroke:#333,stroke-width:1px,color:#000;     %% Amarillo
     classDef tarea fill:#ADD8E6,stroke:#333,stroke-width:1px,color:#000;        %% Azul claro
 ```
-
-## Explicación de actividades del flujo
-
 1. **Recibir solicitud:** El ciudadano remite su petición mediante el canal oficial (plataforma web municipal, buzón digital o formato físico que luego se digitaliza). En esta fase se registra la solicitud con campos esenciales: nombre del solicitante, fecha de recepción, tipo de petición y asunto.
 
 2. **Evaluar solicitud:** Un funcionario revisa la solicitud recibida para verificar si cumple con los requisitos formales exigidos: datos completos, documentos adjuntos, cumplimiento de normas básicas, plazos correctos, etc.
@@ -48,8 +45,7 @@ flowchart LR
 
 ## 📊 Dataset: legaltech_pset_solicitudes.xlsx
 
-Este conjunto de datos simula el funcionamiento de un proceso administrativo digitalizado, usado como base para ejercicios del curso **LegalTech**.  
-Contiene tres tablas relacionadas que describen a los solicitantes, las solicitudes recibidas y el trámite posterior de aquellas que fueron aprobadas.
+Para facilitar el análisis de la información, se ha construido un dataset con la información de los sistemas de la Municipalidad. A continuación se describe las tablas que lo componen:
 
 ---
 
@@ -94,19 +90,3 @@ Contiene tres tablas relacionadas que describen a los solicitantes, las solicitu
 
 ---
 
-### 📁 Detalles técnicos
-
-- **Formato del archivo:** Excel (.xlsx)  
-- **Hojas:** `Solicitantes`, `SolicitudesRecibidas`, `TramiteSolicitudes`  
-- **Codificación:** UTF-8  
-- **Zona horaria de fechas:** `America/Lima (GMT-5)`  
-- **Reproducibilidad:** SEED = 42  
-
----
-
-## 💡 Uso sugerido
-
-Ideal para prácticas de:
-- Análisis de procesos administrativos y trazabilidad.
-- Modelado de datos y construcción de dashboards.
-- Simulación de flujos LegalTech o automatización con IA.
