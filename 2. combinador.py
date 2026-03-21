@@ -23,4 +23,4 @@ df_total = df.merge(
 
 print(df_total.head())
 # Si quieres guardarlo en un archivo nuevo
-df_total.to_excel("merge_total.xlsx", index=False)
+df_total.to_excel("data/merge_total.xlsx", index=False)

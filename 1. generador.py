@@ -48,7 +48,7 @@ random.seed(SEED)
 np.random.seed(SEED)
 
 TZ = pytz.timezone("America/Lima")
-OUTPUT_PATH = "legaltech_pset_solicitudes.xlsx"
+OUTPUT_PATH = "data/legaltech_pset_solicitudes.xlsx"
 
 BUSINESS_START = time(8,30)
 BUSINESS_END   = time(17,30)
